@@ -1,29 +1,25 @@
-import os
-import re
-import cv2
 import math
-import requests
-import cloudscraper
-
+import os
 import urllib.request as urllib
-from PIL import Image
 from html import escape
-from pyrogram import filters
-from bs4 import BeautifulSoup as bs
-from cloudscraper import CloudScraper
-from bs4 import BeautifulSoup
-from FallenRobot.helper_extra.converter import convert_gif
 from urllib.parse import quote as urlquote
 
-from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
-from telegram import TelegramError, Update, CallbackQuery
-from telegram.ext import run_async, CallbackContext, CallbackQueryHandler
+from bs4 import BeautifulSoup
+from cloudscraper import CloudScraper
+from PIL import Image
+from telegram import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ParseMode,
+    TelegramError,
+    Update,
+)
+from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import pbot
 from FallenRobot import dispatcher
+from FallenRobot.helper_extra.converter import convert_gif
 from FallenRobot.modules.disable import DisableAbleCommandHandler
-
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
