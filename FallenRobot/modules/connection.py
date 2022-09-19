@@ -5,10 +5,10 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackQueryHandler, CommandHandler, run_async
 
-import FallenRobot.modules.sql.connection_sql as sql
-from FallenRobot import DEV_USERS, DRAGONS, dispatcher
-from FallenRobot.modules.helper_funcs import chat_status
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
+import MissRich.modules.sql.connection_sql as sql
+from MissRich import DEV_USERS, DRAGONS, dispatcher
+from MissRich.modules.helper_funcs import chat_status
+from MissRich.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 

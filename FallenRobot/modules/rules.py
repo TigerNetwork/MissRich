@@ -12,10 +12,10 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import escape_markdown
 
-import FallenRobot.modules.sql.rules_sql as sql
-from FallenRobot import dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from FallenRobot.modules.helper_funcs.string_handling import markdown_parser
+import MissRich.modules.sql.rules_sql as sql
+from MissRich import dispatcher
+from MissRich.modules.helper_funcs.chat_status import connection_status, user_admin
+from MissRich.modules.helper_funcs.string_handling import markdown_parser
 
 
 @connection_status

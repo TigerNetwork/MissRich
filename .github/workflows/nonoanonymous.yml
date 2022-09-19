@@ -1,4 +1,4 @@
-name: Lets Start FallenRobot
+name: Lets Start MissRich
 on: push
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
       - name: Pull All Updates
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'FallenRobot'
+          commit_message: 'MissRich'
           commit_options: '--no-verify'
           repository: .
           commit_user_name: AnonymousBoy1025

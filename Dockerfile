@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/FallenRobot
-RUN git clone https://github.com/TigerNetwork/MissRich /root/FallenRobot
-WORKDIR /root/FallenRobot
+# Copy Python Requirements to /root/MissRich
+RUN git clone https://github.com/TigerNetwork/MissRich /root/MissRich
+WORKDIR /root/MissRich
 
-#Copy config file to /root/FallenRobot/FallenRobot
-COPY ./FallenRobot/sample_config.py ./FallenRobot/config.py* /root/FallenRobot/FallenRobot/
+#Copy config file to /root/MissRich/MissRich
+COPY ./MissRich/sample_config.py ./MissRich/config.py* /root/MissRich/MissRich/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","FallenRobot"]
+CMD ["python3","-m","MissRich"]

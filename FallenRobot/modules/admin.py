@@ -6,11 +6,11 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import DRAGONS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.admin_rights import user_can_changeinfo
-from FallenRobot.modules.helper_funcs.alternate import send_message
-from FallenRobot.modules.helper_funcs.chat_status import (
+from MissRich import DRAGONS, dispatcher
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.admin_rights import user_can_changeinfo
+from MissRich.modules.helper_funcs.alternate import send_message
+from MissRich.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
     bot_admin,
     can_pin,
@@ -18,11 +18,11 @@ from FallenRobot.modules.helper_funcs.chat_status import (
     connection_status,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from MissRich.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.log_channel import loggable
+from MissRich.modules.log_channel import loggable
 
 
 @run_async
