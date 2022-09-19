@@ -1,10 +1,9 @@
 from datetime import datetime
 
+from FallenRobot import pbot
 from pyrogram import filters
 from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
-
-from FallenRobot import pbot
 
 
 def ReplyCheck(message: Message):

@@ -2,11 +2,10 @@ import io
 import os
 
 import requests
+from FallenRobot import SUPPORT_CHAT, dispatcher, pbot
 from PIL import Image
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-
-from FallenRobot import SUPPORT_CHAT, dispatcher, pbot
 
 
 def get_text(message: Message) -> [None, str]:

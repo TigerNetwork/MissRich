@@ -1,9 +1,8 @@
 import threading
 
+from FallenRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String
 from sqlalchemy.sql.sqltypes import BigInteger
-
-from FallenRobot.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):

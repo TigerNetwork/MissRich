@@ -3,17 +3,6 @@ import time
 from datetime import datetime
 from io import BytesIO
 
-from telegram import ParseMode, Update
-from telegram.error import BadRequest, TelegramError, Unauthorized
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import mention_html
-
 import FallenRobot.modules.sql.global_bans_sql as sql
 from FallenRobot import (
     DEMONS,
@@ -38,6 +27,16 @@ from FallenRobot.modules.helper_funcs.extraction import (
 )
 from FallenRobot.modules.helper_funcs.misc import send_to_list
 from FallenRobot.modules.sql.users_sql import get_user_com_chats
+from telegram import ParseMode, Update
+from telegram.error import BadRequest, TelegramError, Unauthorized
+from telegram.ext import (
+    CallbackContext,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import mention_html
 
 GBAN_ENFORCE_GROUP = 6
 

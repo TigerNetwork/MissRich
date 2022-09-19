@@ -1,11 +1,6 @@
 import html
 import os
 
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, run_async
-from telegram.utils.helpers import mention_html
-
 from FallenRobot import DRAGONS, dispatcher
 from FallenRobot.modules.disable import DisableAbleCommandHandler
 from FallenRobot.modules.helper_funcs.admin_rights import user_can_changeinfo
@@ -23,6 +18,10 @@ from FallenRobot.modules.helper_funcs.extraction import (
     extract_user_and_text,
 )
 from FallenRobot.modules.log_channel import loggable
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler, run_async
+from telegram.utils.helpers import mention_html
 
 
 @run_async

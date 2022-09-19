@@ -1,8 +1,7 @@
 from typing import Dict, Union
 
-from pymongo import MongoClient
-
 from FallenRobot import MONGO_DB_URI
+from pymongo import MongoClient
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)

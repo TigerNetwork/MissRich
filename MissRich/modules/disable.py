@@ -1,6 +1,9 @@
 import importlib
 from typing import Union
 
+from FallenRobot import dispatcher
+from FallenRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from FallenRobot.modules.helper_funcs.misc import is_module_loaded
 from future.utils import string_types
 from telegram import ParseMode, Update
 from telegram.ext import (
@@ -12,16 +15,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from FallenRobot import dispatcher
-from FallenRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from FallenRobot.modules.helper_funcs.misc import is_module_loaded
-
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-
-    from telegram.ext.dispatcher import run_async
 
     from FallenRobot.modules.helper_funcs.chat_status import (
         connection_status,
@@ -29,6 +26,7 @@ if is_module_loaded(FILENAME):
         user_admin,
     )
     from FallenRobot.modules.sql import disable_sql as sql
+    from telegram.ext.dispatcher import run_async
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []

@@ -1,13 +1,12 @@
 import random
 
+from FallenRobot import OWNER_USERNAME, SUPPORT_CHAT, dispatcher
+from FallenRobot import telethn as tbot
+from FallenRobot.events import register
 from pyrogram import __version__ as pyrover
 from telegram import __version__ as telever
 from telethon import Button
 from telethon import __version__ as tlhver
-
-from FallenRobot import OWNER_USERNAME, SUPPORT_CHAT, dispatcher
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
 
 PHOTO = [
     "https://graph.org/file/6a21ea6677342f43b363e.jpg",

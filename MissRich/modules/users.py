@@ -1,6 +1,10 @@
 from io import BytesIO
 from time import sleep
 
+import FallenRobot.modules.sql.users_sql as sql
+from FallenRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from FallenRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from FallenRobot.modules.sql.users_sql import get_all_users
 from telegram import TelegramError, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -10,11 +14,6 @@ from telegram.ext import (
     MessageHandler,
     run_async,
 )
-
-import FallenRobot.modules.sql.users_sql as sql
-from FallenRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from FallenRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5

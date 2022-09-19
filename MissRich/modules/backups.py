@@ -3,10 +3,6 @@ import os
 import time
 from io import BytesIO
 
-from telegram import Message, ParseMode
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, run_async
-
 # from FallenRobot.modules.sql import warns_sql as warnssql
 import FallenRobot.modules.sql.blacklist_sql as blacklistsql
 
@@ -23,6 +19,9 @@ from FallenRobot.modules.connection import connected
 from FallenRobot.modules.helper_funcs.alternate import typing_action
 from FallenRobot.modules.helper_funcs.chat_status import user_admin
 from FallenRobot.modules.sql import disable_sql as disabledsql
+from telegram import Message, ParseMode
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, run_async
 
 
 @run_async

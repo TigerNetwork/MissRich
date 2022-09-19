@@ -4,10 +4,9 @@ import os
 import random
 
 import requests
-from PIL import Image, ImageDraw, ImageFont
-
 from FallenRobot import OWNER_ID, SUPPORT_CHAT, telethn
 from FallenRobot.events import register
+from PIL import Image, ImageDraw, ImageFont
 
 LOGO_LINKS = [
     "https://graph.org/file/d1838efdafce9fe611d0c.jpg",

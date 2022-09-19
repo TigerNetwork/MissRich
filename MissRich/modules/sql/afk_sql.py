@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import BigInteger, Boolean, Column, UnicodeText
-
 from FallenRobot.modules.sql import BASE, SESSION
+from sqlalchemy import BigInteger, Boolean, Column, UnicodeText
 
 
 class AFK(BASE):

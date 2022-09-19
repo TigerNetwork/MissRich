@@ -2,18 +2,6 @@ import html
 import re
 from typing import Optional
 
-from telegram import Chat, ChatPermissions, Message, Update, User
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import mention_html
-
 from FallenRobot import TIGERS, WOLVES, dispatcher
 from FallenRobot.modules.connection import connected
 from FallenRobot.modules.helper_funcs.alternate import send_message
@@ -27,6 +15,17 @@ from FallenRobot.modules.helper_funcs.string_handling import extract_time
 from FallenRobot.modules.log_channel import loggable
 from FallenRobot.modules.sql import antiflood_sql as sql
 from FallenRobot.modules.sql.approve_sql import is_approved
+from telegram import Chat, ChatPermissions, Message, Update, User
+from telegram.error import BadRequest
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import mention_html
 
 FLOOD_GROUP = 3
 

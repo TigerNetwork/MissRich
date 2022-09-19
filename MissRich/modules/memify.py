@@ -1,10 +1,9 @@
 import os
 import textwrap
 
-from PIL import Image, ImageDraw, ImageFont
-
 from FallenRobot import telethn as bot
 from FallenRobot.events import register
+from PIL import Image, ImageDraw, ImageFont
 
 Credit = "AnonymousBoy1025"
 

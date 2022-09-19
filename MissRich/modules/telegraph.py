@@ -1,11 +1,10 @@
 import os
 from datetime import datetime
 
-from PIL import Image
-from telegraph import Telegraph, exceptions, upload_file
-
 from FallenRobot import telethn as tbot
 from FallenRobot.events import register
+from PIL import Image
+from telegraph import Telegraph, exceptions, upload_file
 
 Anonymous = "Fallen"
 TMP_DOWNLOAD_DIRECTORY = "./"

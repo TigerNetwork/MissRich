@@ -1,9 +1,6 @@
 import collections
 import importlib
 
-from telegram import ParseMode, Update
-from telegram.ext import CallbackContext, CommandHandler, run_async
-
 from FallenRobot import dispatcher, telethn
 from FallenRobot.__main__ import (
     CHAT_SETTINGS,
@@ -17,6 +14,8 @@ from FallenRobot.__main__ import (
     USER_SETTINGS,
 )
 from FallenRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from telegram import ParseMode, Update
+from telegram.ext import CallbackContext, CommandHandler, run_async
 
 
 @run_async

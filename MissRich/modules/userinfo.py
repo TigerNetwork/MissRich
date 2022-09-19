@@ -2,23 +2,8 @@ import html
 import os
 import re
 
-import requests
-from telegram import (
-    MAX_MESSAGE_LENGTH,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ParseMode,
-    Update,
-)
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler
-from telegram.ext.dispatcher import run_async
-from telegram.utils.helpers import escape_markdown, mention_html
-from telethon import events
-from telethon.tl.functions.channels import GetFullChannelRequest
-from telethon.tl.types import ChannelParticipantsAdmins
-
 import FallenRobot.modules.sql.userinfo_sql as sql
+import requests
 from FallenRobot import (
     DEMONS,
     DEV_USERS,
@@ -37,6 +22,20 @@ from FallenRobot.modules.helper_funcs.extraction import extract_user
 from FallenRobot.modules.sql.afk_sql import check_afk_status, is_afk
 from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
 from FallenRobot.modules.sql.users_sql import get_user_num_chats
+from telegram import (
+    MAX_MESSAGE_LENGTH,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ParseMode,
+    Update,
+)
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler
+from telegram.ext.dispatcher import run_async
+from telegram.utils.helpers import escape_markdown, mention_html
+from telethon import events
+from telethon.tl.functions.channels import GetFullChannelRequest
+from telethon.tl.types import ChannelParticipantsAdmins
 
 
 def no_by_per(totalhp, percentage):

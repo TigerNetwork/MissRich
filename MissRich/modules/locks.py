@@ -1,20 +1,7 @@
 import html
 
-from alphabet_detector import AlphabetDetector
-from telegram import (
-    Chat,
-    ChatPermissions,
-    Message,
-    MessageEntity,
-    ParseMode,
-    TelegramError,
-)
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, Filters, MessageHandler
-from telegram.ext.dispatcher import run_async
-from telegram.utils.helpers import mention_html
-
 import FallenRobot.modules.sql.locks_sql as sql
+from alphabet_detector import AlphabetDetector
 from FallenRobot import DRAGONS, LOGGER, dispatcher
 from FallenRobot.modules.connection import connected
 from FallenRobot.modules.disable import DisableAbleCommandHandler
@@ -28,6 +15,18 @@ from FallenRobot.modules.helper_funcs.chat_status import (
 )
 from FallenRobot.modules.log_channel import loggable
 from FallenRobot.modules.sql.approve_sql import is_approved
+from telegram import (
+    Chat,
+    ChatPermissions,
+    Message,
+    MessageEntity,
+    ParseMode,
+    TelegramError,
+)
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, Filters, MessageHandler
+from telegram.ext.dispatcher import run_async
+from telegram.utils.helpers import mention_html
 
 ad = AlphabetDetector()
 

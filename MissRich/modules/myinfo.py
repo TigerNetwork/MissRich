@@ -3,11 +3,10 @@ import datetime
 import re
 from datetime import datetime
 
-from telethon import custom, events
-
 from FallenRobot import telethn as bot
 from FallenRobot import telethn as tgbot
 from FallenRobot.events import register
+from telethon import custom, events
 
 edit_time = 5
 """ =======================FALLEN ROBOT====================== """

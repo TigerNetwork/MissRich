@@ -1,9 +1,8 @@
 import threading
 
+from FallenRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
-
-from FallenRobot.modules.sql import BASE, SESSION
 
 
 class Warns(BASE):
