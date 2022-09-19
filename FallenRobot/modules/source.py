@@ -6,8 +6,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import __version__ as o
 from telethon import __version__ as s
 
-from FallenRobot import OWNER_USERNAME, dispatcher
-from FallenRobot import pbot as client
+from MissRich import OWNER_USERNAME, dispatcher
+from MissRich import pbot as client
 
 ANON = "https://graph.org/file/7bd111132fce009e4605e.jpg"
 

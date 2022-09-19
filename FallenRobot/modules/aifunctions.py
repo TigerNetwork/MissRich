@@ -3,8 +3,8 @@ import requests
 url = "https://iamai.p.rapidapi.com/ask"
 import asyncio
 
-from FallenRobot import telethn
-from FallenRobot.events import register
+from MissRich import telethn
+from MissRich.events import register
 
 
 @register(pattern="Fallen (.*)")

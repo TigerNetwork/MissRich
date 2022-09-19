@@ -8,9 +8,9 @@ from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-import FallenRobot
-from FallenRobot import dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import dev_plus
+import MissRich
+from MissRich import dispatcher
+from MissRich.modules.helper_funcs.chat_status import dev_plus
 
 
 @run_async
@@ -18,12 +18,12 @@ from FallenRobot.modules.helper_funcs.chat_status import dev_plus
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {FallenRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {MissRich.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        FallenRobot.ALLOW_CHATS = True
+        MissRich.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        FallenRobot.ALLOW_CHATS = False
+        MissRich.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return

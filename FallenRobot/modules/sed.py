@@ -5,9 +5,9 @@ import telegram
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
-from FallenRobot import LOGGER, dispatcher
-from FallenRobot.modules.disable import DisableAbleMessageHandler
-from FallenRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from MissRich import LOGGER, dispatcher
+from MissRich.modules.disable import DisableAbleMessageHandler
+from MissRich.modules.helper_funcs.regex_helper import infinite_loop_check
 
 DELIMITERS = ("/", ":", "|", "_")
 

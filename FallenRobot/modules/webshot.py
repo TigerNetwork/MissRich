@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenRobot import pbot as app
-from FallenRobot.utils.errors import capture_err
+from MissRich import pbot as app
+from MissRich.utils.errors import capture_err
 
 __help__ = """
 » /webss *:* Sends the screenshot of the given url.
