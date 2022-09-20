@@ -1,8 +1,9 @@
 import threading
 from typing import Union
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class ReportingUserSettings(BASE):

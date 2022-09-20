@@ -1,7 +1,8 @@
 import threading
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Column, String, UnicodeText, distinct, func
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class StickersFilters(BASE):

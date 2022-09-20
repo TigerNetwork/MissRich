@@ -1,7 +1,8 @@
 from typing import Dict, Union
 
-from MissRich import MONGO_DB_URI
 from pymongo import MongoClient
+
+from MissRich import MONGO_DB_URI
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)

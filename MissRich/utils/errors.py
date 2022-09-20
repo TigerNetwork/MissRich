@@ -2,9 +2,10 @@ import sys
 import traceback
 from functools import wraps
 
+from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
+
 from MissRich import LOGGER
 from MissRich import pbot as app
-from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 
 def split_limits(text):

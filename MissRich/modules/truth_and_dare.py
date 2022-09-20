@@ -1,8 +1,9 @@
 import requests
-from MissRich import dispatcher
-from MissRich.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext
+
+from MissRich import dispatcher
+from MissRich.modules.disable import DisableAbleCommandHandler
 
 
 def truth(update: Update, context: CallbackContext):

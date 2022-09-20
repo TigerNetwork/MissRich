@@ -1,6 +1,7 @@
-from MissRich import DEV_USERS, DRAGONS
 from telegram import Message
 from telegram.ext import BaseFilter
+
+from MissRich import DEV_USERS, DRAGONS
 
 
 class CustomFilters(object):

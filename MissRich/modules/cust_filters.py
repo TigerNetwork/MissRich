@@ -3,6 +3,18 @@ import re
 from html import escape
 
 import telegram
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
+from telegram.error import BadRequest
+from telegram.ext import (
+    CallbackQueryHandler,
+    CommandHandler,
+    DispatcherHandlerStop,
+    Filters,
+    MessageHandler,
+    run_async,
+)
+from telegram.utils.helpers import escape_markdown, mention_html
+
 from MissRich import DRAGONS, LOGGER, dispatcher
 from MissRich.modules.connection import connected
 from MissRich.modules.disable import DisableAbleCommandHandler
@@ -20,17 +32,6 @@ from MissRich.modules.helper_funcs.string_handling import (
     split_quotes,
 )
 from MissRich.modules.sql import cust_filters_sql as sql
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackQueryHandler,
-    CommandHandler,
-    DispatcherHandlerStop,
-    Filters,
-    MessageHandler,
-    run_async,
-)
-from telegram.utils.helpers import escape_markdown, mention_html
 
 HANDLER_GROUP = 10
 

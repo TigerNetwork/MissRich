@@ -1,5 +1,6 @@
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

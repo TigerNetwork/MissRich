@@ -1,9 +1,10 @@
 import speedtest
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
+
 from MissRich import DEV_USERS, dispatcher
 from MissRich.modules.disable import DisableAbleCommandHandler
 from MissRich.modules.helper_funcs.chat_status import dev_plus
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
 
 def convert(speed):

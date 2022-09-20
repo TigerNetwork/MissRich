@@ -1,7 +1,8 @@
 import threading
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class KukiChats(BASE):

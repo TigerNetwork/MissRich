@@ -1,7 +1,5 @@
 import threading
 
-from MissRich import dispatcher
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import (
     BigInteger,
     Column,
@@ -11,6 +9,9 @@ from sqlalchemy import (
     UniqueConstraint,
     func,
 )
+
+from MissRich import dispatcher
+from MissRich.modules.sql import BASE, SESSION
 
 
 class Users(BASE):

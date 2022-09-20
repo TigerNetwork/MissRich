@@ -1,7 +1,8 @@
 import threading
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, UnicodeText
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class CleanerBlueTextChatSettings(BASE):

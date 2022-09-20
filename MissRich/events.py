@@ -2,9 +2,10 @@ import inspect
 import re
 from pathlib import Path
 
-from MissRich import MONGO_DB_URI, telethn
 from pymongo import MongoClient
 from telethon import events
+
+from MissRich import MONGO_DB_URI, telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)

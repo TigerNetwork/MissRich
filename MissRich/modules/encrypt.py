@@ -1,4 +1,5 @@
 import secureme
+
 from MissRich.events import register
 
 

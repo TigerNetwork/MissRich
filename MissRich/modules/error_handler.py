@@ -6,9 +6,10 @@ import traceback
 
 import pretty_errors
 import requests
-from MissRich import DEV_USERS, OWNER_ID, dispatcher
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CommandHandler
+
+from MissRich import DEV_USERS, OWNER_ID, dispatcher
 
 pretty_errors.mono()
 

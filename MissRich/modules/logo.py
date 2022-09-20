@@ -4,9 +4,10 @@ import os
 import random
 
 import requests
+from PIL import Image, ImageDraw, ImageFont
+
 from MissRich import OWNER_ID, SUPPORT_CHAT, telethn
 from MissRich.events import register
-from PIL import Image, ImageDraw, ImageFont
 
 LOGO_LINKS = [
     "https://graph.org/file/d1838efdafce9fe611d0c.jpg",

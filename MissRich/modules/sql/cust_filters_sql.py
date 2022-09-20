@@ -1,8 +1,9 @@
 import threading
 
+from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
+
 from MissRich.modules.helper_funcs.msg_types import Types
 from MissRich.modules.sql import BASE, SESSION
-from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 
 
 class CustomFilters(BASE):

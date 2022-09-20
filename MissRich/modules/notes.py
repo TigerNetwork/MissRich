@@ -3,15 +3,6 @@ import re
 from io import BytesIO
 from typing import Optional
 
-import MissRich.modules.sql.notes_sql as sql
-from MissRich import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
-from MissRich.modules.disable import DisableAbleCommandHandler
-from MissRich.modules.helper_funcs.chat_status import connection_status, user_admin
-from MissRich.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from MissRich.modules.helper_funcs.msg_types import get_note_type
-from MissRich.modules.helper_funcs.string_handling import (
-    escape_invalid_curly_brackets,
-)
 from telegram import (
     MAX_MESSAGE_LENGTH,
     InlineKeyboardButton,
@@ -30,6 +21,14 @@ from telegram.ext import (
 )
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown, mention_markdown
+
+import MissRich.modules.sql.notes_sql as sql
+from MissRich import DRAGONS, JOIN_LOGGER, LOGGER, SUPPORT_CHAT, dispatcher
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.chat_status import connection_status, user_admin
+from MissRich.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from MissRich.modules.helper_funcs.msg_types import get_note_type
+from MissRich.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")

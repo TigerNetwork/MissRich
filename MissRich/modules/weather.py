@@ -1,9 +1,10 @@
 import io
 
 import aiohttp
+from telethon.tl import functions, types
+
 from MissRich import telethn as tbot
 from MissRich.events import register
-from telethon.tl import functions, types
 
 
 async def is_register_admin(chat, user):

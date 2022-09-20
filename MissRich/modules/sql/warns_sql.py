@@ -1,8 +1,9 @@
 import threading
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class Warns(BASE):

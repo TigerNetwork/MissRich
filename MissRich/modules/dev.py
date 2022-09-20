@@ -4,12 +4,13 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import MissRich
-from MissRich import dispatcher
-from MissRich.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
+
+import MissRich
+from MissRich import dispatcher
+from MissRich.modules.helper_funcs.chat_status import dev_plus
 
 
 @run_async

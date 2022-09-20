@@ -1,9 +1,10 @@
 import os
 
 import cv2
+from PIL import Image
+
 from MissRich import telethn as tbot
 from MissRich.events import register
-from PIL import Image
 
 
 @register(pattern="^/tiny ?(.*)")

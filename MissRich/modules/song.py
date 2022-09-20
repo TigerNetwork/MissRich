@@ -2,9 +2,10 @@ import os
 
 import requests
 import yt_dlp
-from MissRich import SUPPORT_CHAT, pbot
 from pyrogram import filters
 from youtube_search import YoutubeSearch
+
+from MissRich import SUPPORT_CHAT, pbot
 
 
 def time_to_seconds(time):

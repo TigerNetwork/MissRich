@@ -1,10 +1,11 @@
 import asyncio
 
-from MissRich import telethn as client
 from telethon import events
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
+
+from MissRich import telethn as client
 
 spam_chats = []
 

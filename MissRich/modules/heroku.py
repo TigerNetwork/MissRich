@@ -4,6 +4,7 @@ import os
 
 import heroku3
 import requests
+
 from MissRich import HEROKU_API_KEY, HEROKU_APP_NAME, OWNER_ID
 from MissRich.events import register
 

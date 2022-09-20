@@ -2,8 +2,9 @@ import threading
 import time
 from typing import Union
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
+
+from MissRich.modules.sql import BASE, SESSION
 
 
 class ChatAccessConnectionSettings(BASE):

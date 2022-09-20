@@ -1,7 +1,8 @@
 import threading
 
-from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Column, String, UnicodeText
+
+from MissRich.modules.sql import BASE, SESSION
 
 DEF_COUNT = 1
 DEF_LIMIT = 0

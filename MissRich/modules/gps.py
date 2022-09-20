@@ -1,9 +1,10 @@
-from MissRich import *
-from MissRich import telethn as tbot
-from MissRich.events import register
 from geopy.geocoders import Nominatim
 from telethon import *
 from telethon.tl import *
+
+from MissRich import *
+from MissRich import telethn as tbot
+from MissRich.events import register
 
 GMAPS_LOC = "https://maps.googleapis.com/maps/api/geocode/json"
 

@@ -1,9 +1,10 @@
 import os
 import textwrap
 
+from PIL import Image, ImageDraw, ImageFont
+
 from MissRich import telethn as bot
 from MissRich.events import register
-from PIL import Image, ImageDraw, ImageFont
 
 Credit = "AnonymousBoy1025"
 

@@ -1,9 +1,10 @@
 import io
 
-from MissRich import telethn as tbot
-from MissRich.events import register
 from telethon import types
 from telethon.tl import functions
+
+from MissRich import telethn as tbot
+from MissRich.events import register
 
 
 async def is_register_admin(chat, user):
