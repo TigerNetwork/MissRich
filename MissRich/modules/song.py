@@ -2,7 +2,7 @@ import os
 
 import requests
 import yt_dlp
-from FallenRobot import SUPPORT_CHAT, pbot
+from MissRich import SUPPORT_CHAT, pbot
 from pyrogram import filters
 from youtube_search import YoutubeSearch
 

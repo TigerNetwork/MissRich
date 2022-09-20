@@ -1,7 +1,7 @@
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
-from FallenRobot.modules.sql.night_mode_sql import (
+from MissRich import telethn as tbot
+from MissRich.events import register
+from MissRich.modules.sql.night_mode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,

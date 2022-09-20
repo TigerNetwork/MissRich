@@ -5,8 +5,8 @@ from platform import python_version as y
 from sys import argv
 from typing import Optional
 
-import FallenRobot.modules.sql.users_sql as sql
-from FallenRobot import (
+import MissRich.modules.sql.users_sql as sql
+from MissRich import (
     BOT_NAME,
     BOT_USERNAME,
     CERT_PATH,
@@ -28,9 +28,9 @@ from FallenRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from FallenRobot.modules import ALL_MODULES
-from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
-from FallenRobot.modules.helper_funcs.misc import paginate_modules
+from MissRich.modules import ALL_MODULES
+from MissRich.modules.helper_funcs.chat_status import is_user_admin
+from MissRich.modules.helper_funcs.misc import paginate_modules
 from pyrogram import __version__ as pyrover
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram import __version__ as telever
@@ -134,7 +134,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("FallenRobot.modules." + module_name)
+    imported_module = importlib.import_module("MissRich.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 

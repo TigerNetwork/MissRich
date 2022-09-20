@@ -5,21 +5,21 @@
 </h2>
 
 <p align="center">
-  <img src="https://github.com/TigerNetwork/MissRich/blob/master/FallenRobot/resources/fglitch.gif">
+  <img src="https://github.com/TigerNetwork/MissRich/blob/master/MissRich/resources/fglitch.gif">
 </p>
 
 _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ᴍɪss ✘ ʀɪᴄʜ](https://t.me/FallenXRobot)**_
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-<a href="https://github.com/TigerNetwork/MissRich/stargazers"><img src="https://img.shields.io/github/stars/AnonymousR1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/TigerNetwork/MissRich/network/members"> <img src="https://img.shields.io/github/forks/AnonymousR1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/TigerNetwork/MissRich/stargazers"><img src="https://img.shields.io/github/stars/AnonymousR1025/MissRich?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/TigerNetwork/MissRich/network/members"> <img src="https://img.shields.io/github/forks/AnonymousR1025/MissRich?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/TigerNetwork/MissRich/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=white&label=telethon&logo=python&logoColor=blue&style=for-the-badge" /></a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=white&label=pyrogram&logo=python&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/TigerNetwork/MissRich"> <img src="https://img.shields.io/github/repo-size/AnonymousR1025/FallenRobot?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/TigerNetwork/MissRich/commits/AnonymousR1025"> <img src="https://img.shields.io/github/last-commit/AnonymousR1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/TigerNetwork/MissRich"> <img src="https://img.shields.io/github/repo-size/AnonymousR1025/MissRich?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/TigerNetwork/MissRich/commits/AnonymousR1025"> <img src="https://img.shields.io/github/last-commit/AnonymousR1025/MissRich?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 </p>
 
 ━━━━━━━━━━━━━━━━━━━━

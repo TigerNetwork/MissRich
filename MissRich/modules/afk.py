@@ -1,13 +1,13 @@
 import html
 import random
 
-from FallenRobot import dispatcher
-from FallenRobot.modules.disable import (
+from MissRich import dispatcher
+from MissRich.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from FallenRobot.modules.sql import afk_sql as sql
-from FallenRobot.modules.users import get_user_id
+from MissRich.modules.sql import afk_sql as sql
+from MissRich.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async

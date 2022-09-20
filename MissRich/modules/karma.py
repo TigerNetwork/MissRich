@@ -1,8 +1,8 @@
 import asyncio
 
-from FallenRobot import OWNER_ID
-from FallenRobot import pbot as app
-from FallenRobot.helper_extra.dbfun import (
+from MissRich import OWNER_ID
+from MissRich import pbot as app
+from MissRich.helper_extra.dbfun import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -12,8 +12,8 @@ from FallenRobot.helper_extra.dbfun import (
     karma_on,
     update_karma,
 )
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.permissions import adminsOnly
+from MissRich.utils.errors import capture_err
+from MissRich.utils.permissions import adminsOnly
 from pyrogram import filters
 
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍|baby|bsdk|bhadve|betichod|thankyou|love|pro)$"

@@ -3,23 +3,23 @@ import re
 from html import escape
 
 import telegram
-from FallenRobot import DRAGONS, LOGGER, dispatcher
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.helper_funcs.extraction import extract_text
-from FallenRobot.modules.helper_funcs.filters import CustomFilters
-from FallenRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from FallenRobot.modules.helper_funcs.misc import build_keyboard_parser
-from FallenRobot.modules.helper_funcs.msg_types import get_filter_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+from MissRich import DRAGONS, LOGGER, dispatcher
+from MissRich.modules.connection import connected
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.alternate import send_message, typing_action
+from MissRich.modules.helper_funcs.chat_status import user_admin
+from MissRich.modules.helper_funcs.extraction import extract_text
+from MissRich.modules.helper_funcs.filters import CustomFilters
+from MissRich.modules.helper_funcs.handlers import MessageHandlerChecker
+from MissRich.modules.helper_funcs.misc import build_keyboard_parser
+from MissRich.modules.helper_funcs.msg_types import get_filter_type
+from MissRich.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from FallenRobot.modules.sql import cust_filters_sql as sql
+from MissRich.modules.sql import cust_filters_sql as sql
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import (

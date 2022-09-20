@@ -1,6 +1,6 @@
-from FallenRobot import dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
+from MissRich import dispatcher
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.chat_status import user_admin
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.ext.dispatcher import run_async

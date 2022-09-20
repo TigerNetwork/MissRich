@@ -1,5 +1,5 @@
-from FallenRobot import DB_URI
-from FallenRobot import LOGGER as log
+from MissRich import DB_URI
+from MissRich import LOGGER as log
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker

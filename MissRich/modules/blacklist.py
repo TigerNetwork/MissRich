@@ -1,18 +1,18 @@
 import html
 import re
 
-import FallenRobot.modules.sql.blacklist_sql as sql
-from FallenRobot import LOGGER, dispatcher
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from FallenRobot.modules.helper_funcs.extraction import extract_text
-from FallenRobot.modules.helper_funcs.misc import split_message
-from FallenRobot.modules.helper_funcs.string_handling import extract_time
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql.approve_sql import is_approved
-from FallenRobot.modules.warns import warn
+import MissRich.modules.sql.blacklist_sql as sql
+from MissRich import LOGGER, dispatcher
+from MissRich.modules.connection import connected
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.alternate import send_message, typing_action
+from MissRich.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from MissRich.modules.helper_funcs.extraction import extract_text
+from MissRich.modules.helper_funcs.misc import split_message
+from MissRich.modules.helper_funcs.string_handling import extract_time
+from MissRich.modules.log_channel import loggable
+from MissRich.modules.sql.approve_sql import is_approved
+from MissRich.modules.warns import warn
 from telegram import ChatPermissions, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, run_async

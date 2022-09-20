@@ -1,5 +1,5 @@
 import secureme
-from FallenRobot.events import register
+from MissRich.events import register
 
 
 @register(pattern="^/encrypt ?(.*)")

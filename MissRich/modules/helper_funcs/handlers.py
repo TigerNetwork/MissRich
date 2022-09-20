@@ -1,5 +1,5 @@
-import FallenRobot.modules.sql.blacklistusers_sql as sql
-from FallenRobot import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
+import MissRich.modules.sql.blacklistusers_sql as sql
+from MissRich import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
 from pyrate_limiter import (
     BucketFullException,
     Duration,

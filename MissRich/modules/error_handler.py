@@ -6,7 +6,7 @@ import traceback
 
 import pretty_errors
 import requests
-from FallenRobot import DEV_USERS, OWNER_ID, dispatcher
+from MissRich import DEV_USERS, OWNER_ID, dispatcher
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CommandHandler
 

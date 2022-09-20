@@ -2,8 +2,8 @@ import sys
 import traceback
 from functools import wraps
 
-from FallenRobot import LOGGER
-from FallenRobot import pbot as app
+from MissRich import LOGGER
+from MissRich import pbot as app
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 

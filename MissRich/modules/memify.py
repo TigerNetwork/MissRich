@@ -1,8 +1,8 @@
 import os
 import textwrap
 
-from FallenRobot import telethn as bot
-from FallenRobot.events import register
+from MissRich import telethn as bot
+from MissRich.events import register
 from PIL import Image, ImageDraw, ImageFont
 
 Credit = "AnonymousBoy1025"
@@ -68,7 +68,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./FallenRobot/resources/default.ttf"
+        fnt = "./MissRich/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 

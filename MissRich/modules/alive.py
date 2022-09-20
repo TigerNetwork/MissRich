@@ -1,8 +1,8 @@
 import random
 
-from FallenRobot import OWNER_USERNAME, SUPPORT_CHAT, dispatcher
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
+from MissRich import OWNER_USERNAME, SUPPORT_CHAT, dispatcher
+from MissRich import telethn as tbot
+from MissRich.events import register
 from pyrogram import __version__ as pyrover
 from telegram import __version__ as telever
 from telethon import Button

@@ -1,7 +1,7 @@
 import json
 
 import requests
-from FallenRobot.events import register
+from MissRich.events import register
 from PyDictionary import PyDictionary
 from telethon import *
 from telethon.tl.types import *

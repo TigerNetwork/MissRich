@@ -2,9 +2,9 @@ import time
 from typing import List
 
 import requests
-from FallenRobot import StartTime, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import sudo_plus
+from MissRich import StartTime, dispatcher
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.chat_status import sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 

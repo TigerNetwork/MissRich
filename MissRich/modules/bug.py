@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from FallenRobot import OWNER_ID as owner_id
-from FallenRobot import OWNER_USERNAME as owner_usn
-from FallenRobot import SUPPORT_CHAT as log
-from FallenRobot import pbot as Client
-from FallenRobot.utils.errors import capture_err
+from MissRich import OWNER_ID as owner_id
+from MissRich import OWNER_USERNAME as owner_usn
+from MissRich import SUPPORT_CHAT as log
+from MissRich import pbot as Client
+from MissRich.utils.errors import capture_err
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 

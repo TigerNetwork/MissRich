@@ -1,7 +1,7 @@
 from platform import python_version as y
 
-from FallenRobot import OWNER_USERNAME, dispatcher
-from FallenRobot import pbot as client
+from MissRich import OWNER_USERNAME, dispatcher
+from MissRich import pbot as client
 from pyrogram import __version__ as z
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup

@@ -9,8 +9,8 @@ import bs4
 import requests
 from bing_image_downloader import downloader
 from bs4 import BeautifulSoup
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
+from MissRich import telethn as tbot
+from MissRich.events import register
 from PIL import Image
 from search_engine_parser import GoogleSearch
 

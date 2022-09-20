@@ -1,8 +1,8 @@
 import os
 from datetime import datetime
 
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
+from MissRich import telethn as tbot
+from MissRich.events import register
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 

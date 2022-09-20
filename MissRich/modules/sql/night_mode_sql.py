@@ -1,4 +1,4 @@
-from FallenRobot.modules.sql import BASE, SESSION
+from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String
 
 

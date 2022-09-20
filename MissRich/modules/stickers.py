@@ -5,8 +5,8 @@ from html import escape
 
 import requests
 from bs4 import BeautifulSoup as bs
-from FallenRobot import dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from MissRich import dispatcher
+from MissRich.modules.disable import DisableAbleCommandHandler
 from PIL import Image
 from telegram import (
     InlineKeyboardButton,

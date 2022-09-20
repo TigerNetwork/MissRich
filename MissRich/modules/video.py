@@ -6,7 +6,7 @@ import time
 from urllib.parse import urlparse
 
 import wget
-from FallenRobot import pbot
+from MissRich import pbot
 from pyrogram import filters
 from pyrogram.types import Message
 from youtubesearchpython import SearchVideos

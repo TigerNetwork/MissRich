@@ -1,8 +1,8 @@
 import random
 from datetime import datetime
 
-from FallenRobot import pbot
-from FallenRobot.helper_extra.dbfun import get_couple, save_couple
+from MissRich import pbot
+from MissRich.helper_extra.dbfun import get_couple, save_couple
 from pyrogram import filters
 
 

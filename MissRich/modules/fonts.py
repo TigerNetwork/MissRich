@@ -1,4 +1,4 @@
-from FallenRobot.utils.fonts import Fonts
+from MissRich.utils.fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 

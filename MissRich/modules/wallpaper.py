@@ -2,7 +2,7 @@ import io
 import os
 
 import requests
-from FallenRobot import SUPPORT_CHAT, dispatcher, pbot
+from MissRich import SUPPORT_CHAT, dispatcher, pbot
 from PIL import Image
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -42,7 +42,7 @@ async def wall(client, message):
             .url
         )
         img = Image.open(io.BytesIO(requests.get(randc).content))
-        fname = "fallenrobot.png"
+        fname = "MissRich.png"
         img.save(fname, "png")
         caption = f"""
 💘 ᴡᴀʟʟᴩᴀᴩᴇʀ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 

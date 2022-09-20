@@ -2,7 +2,7 @@ from math import ceil
 from typing import Dict, List
 from uuid import uuid4
 
-from FallenRobot import NO_LOAD
+from MissRich import NO_LOAD
 from telegram import (
     MAX_MESSAGE_LENGTH,
     Bot,

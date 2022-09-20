@@ -1,8 +1,8 @@
 import datetime
 import os
 
-from FallenRobot import dispatcher, telethn
-from FallenRobot.modules.helper_funcs.chat_status import dev_plus
+from MissRich import dispatcher, telethn
+from MissRich.modules.helper_funcs.chat_status import dev_plus
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telethon import events

@@ -1,7 +1,7 @@
 import threading
 
-from FallenRobot import dispatcher
-from FallenRobot.modules.sql import BASE, SESSION
+from MissRich import dispatcher
+from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import (
     BigInteger,
     Column,

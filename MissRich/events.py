@@ -2,7 +2,7 @@ import inspect
 import re
 from pathlib import Path
 
-from FallenRobot import MONGO_DB_URI, telethn
+from MissRich import MONGO_DB_URI, telethn
 from pymongo import MongoClient
 from telethon import events
 
@@ -142,7 +142,7 @@ def bot(**args):
     return decorator
 
 
-def fallenrobot(**args):
+def MissRich(**args):
     pattern = args.get("pattern", None)
     args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)

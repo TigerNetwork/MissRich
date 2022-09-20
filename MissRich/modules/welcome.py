@@ -5,9 +5,9 @@ import time
 from contextlib import suppress
 from functools import partial
 
-import FallenRobot
-import FallenRobot.modules.sql.welcome_sql as sql
-from FallenRobot import (
+import MissRich
+import MissRich.modules.sql.welcome_sql as sql
+from MissRich import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -18,18 +18,18 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from MissRich.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from FallenRobot.modules.helper_funcs.msg_types import get_welcome_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+from MissRich.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from MissRich.modules.helper_funcs.msg_types import get_welcome_type
+from MissRich.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
+from MissRich.modules.log_channel import loggable
+from MissRich.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -259,7 +259,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not FallenRobot.ALLOW_CHATS:
+                if not MissRich.ALLOW_CHATS:
                     with suppress(BadRequest):
                         update.effective_message.reply_text(
                             f"Groups are disabled for {bot.first_name}, I'm outta here."

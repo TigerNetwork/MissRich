@@ -1,6 +1,6 @@
 import requests
-from FallenRobot import BOT_NAME, BOT_USERNAME
-from FallenRobot import pbot as fallen
+from MissRich import BOT_NAME, BOT_USERNAME
+from MissRich import pbot as fallen
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 

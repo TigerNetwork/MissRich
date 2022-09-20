@@ -1,6 +1,6 @@
 import threading
 
-from FallenRobot.modules.sql import BASE, SESSION
+from MissRich.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Column, String, UnicodeText, distinct, func
 
 

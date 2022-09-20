@@ -1,8 +1,8 @@
 import io
 
 import aiohttp
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
+from MissRich import telethn as tbot
+from MissRich.events import register
 from telethon.tl import functions, types
 
 

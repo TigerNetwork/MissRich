@@ -1,15 +1,15 @@
 from datetime import datetime
 from functools import wraps
 
-from FallenRobot.modules.helper_funcs.misc import is_module_loaded
+from MissRich.modules.helper_funcs.misc import is_module_loaded
 from telegram.ext import CallbackContext
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 if is_module_loaded(FILENAME):
-    from FallenRobot import EVENT_LOGS, LOGGER, dispatcher
-    from FallenRobot.modules.helper_funcs.chat_status import user_admin
-    from FallenRobot.modules.sql import log_channel_sql as sql
+    from MissRich import EVENT_LOGS, LOGGER, dispatcher
+    from MissRich.modules.helper_funcs.chat_status import user_admin
+    from MissRich.modules.sql import log_channel_sql as sql
     from telegram import ParseMode, Update
     from telegram.error import BadRequest, Unauthorized
     from telegram.ext import CommandHandler, JobQueue, run_async

@@ -3,7 +3,7 @@ from threading import RLock
 from time import perf_counter
 
 from cachetools import TTLCache
-from FallenRobot import (
+from MissRich import (
     DEL_CMDS,
     DEMONS,
     DEV_USERS,
@@ -401,6 +401,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from FallenRobot.modules import connection
+from MissRich.modules import connection
 
 connected = connection.connected

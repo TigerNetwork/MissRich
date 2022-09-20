@@ -1,7 +1,7 @@
 import io
 
-from FallenRobot import telethn as tbot
-from FallenRobot.events import register
+from MissRich import telethn as tbot
+from MissRich.events import register
 from telethon import types
 from telethon.tl import functions
 

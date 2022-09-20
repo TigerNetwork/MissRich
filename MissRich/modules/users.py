@@ -1,10 +1,10 @@
 from io import BytesIO
 from time import sleep
 
-import FallenRobot.modules.sql.users_sql as sql
-from FallenRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from FallenRobot.modules.sql.users_sql import get_all_users
+import MissRich.modules.sql.users_sql as sql
+from MissRich import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from MissRich.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from MissRich.modules.sql.users_sql import get_all_users
 from telegram import TelegramError, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

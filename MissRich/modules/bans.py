@@ -1,6 +1,6 @@
 import html
 
-from FallenRobot import (
+from MissRich import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -10,8 +10,8 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import (
+from MissRich.modules.disable import DisableAbleCommandHandler
+from MissRich.modules.helper_funcs.chat_status import (
     bot_admin,
     can_delete,
     can_restrict,
@@ -22,9 +22,9 @@ from FallenRobot.modules.helper_funcs.chat_status import (
     user_admin,
     user_can_ban,
 )
-from FallenRobot.modules.helper_funcs.extraction import extract_user_and_text
-from FallenRobot.modules.helper_funcs.string_handling import extract_time
-from FallenRobot.modules.log_channel import gloggable, loggable
+from MissRich.modules.helper_funcs.extraction import extract_user_and_text
+from MissRich.modules.helper_funcs.string_handling import extract_time
+from MissRich.modules.log_channel import gloggable, loggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async

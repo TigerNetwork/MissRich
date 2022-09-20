@@ -1,11 +1,11 @@
 from typing import Dict, Union
 
-from FallenRobot import MONGO_DB_URI
+from MissRich import MONGO_DB_URI
 from pymongo import MongoClient
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["FallenRobot"]
+db = client["MissRich"]
 
 coupledb = db.couple
 karmadb = db.karma

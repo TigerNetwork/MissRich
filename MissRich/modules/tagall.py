@@ -1,6 +1,6 @@
 import asyncio
 
-from FallenRobot import telethn as client
+from MissRich import telethn as client
 from telethon import events
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest

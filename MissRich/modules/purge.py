@@ -1,7 +1,7 @@
 import time
 
-from FallenRobot import telethn
-from FallenRobot.modules.helper_funcs.telethn.chatstatus import (
+from MissRich import telethn
+from MissRich.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )

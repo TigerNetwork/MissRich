@@ -3,10 +3,10 @@ import os
 import re
 
 import aiofiles
-from FallenRobot import aiohttpsession as session
-from FallenRobot import pbot as app
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.pastebin import paste
+from MissRich import aiohttpsession as session
+from MissRich import pbot as app
+from MissRich.utils.errors import capture_err
+from MissRich.utils.pastebin import paste
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
