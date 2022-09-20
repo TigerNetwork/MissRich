@@ -69,7 +69,7 @@ RUN git clone https://github.com/TigerNetwork/MissRich /root/MissRich
 WORKDIR /root/MissRich
 
 #Copy config file to /root/MissRich/MissRich
-COPY ./MissRich/sample_config.py ./MissRich/config.py* /root/MissRich/MissRich/
+COPY ./MissRich/config.py ./MissRich/config.py* /root/MissRich/MissRich/
 
 ENV PATH="/home/bot/bin:$PATH"
 
