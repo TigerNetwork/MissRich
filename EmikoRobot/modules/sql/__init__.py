@@ -1,10 +1,11 @@
+import DB_URL as DB_URI
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 from EmikoRobot import DB_URI
 from EmikoRobot import LOGGER as log
-import DB_URL as DB_URI
 
 if DB_URI and DB_URI.startswith("postgres://"):
     DB_URI = DB_URI.replace("postgres://", "postgresql://", 1)
