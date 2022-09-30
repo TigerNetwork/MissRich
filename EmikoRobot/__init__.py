@@ -7,7 +7,6 @@ import asyncio
 import time
 import spamwatch
 import telegram.ext as tg
-import DB_URL as DB_URI
 
 from inspect import getfullargspec
 from aiohttp import ClientSession
